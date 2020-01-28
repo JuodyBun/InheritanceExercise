@@ -6,34 +6,35 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            Birds toucan = new Birds
+            {
+                Legs = 2, 
+                Eat = "omnivore",
+                Pet = "Maybe", 
+                End = true, 
+                GotWings = true,
+                Name = "toucan",
+                Color = "rainbow colored",
+                Famous = "Toucan Sam: Cartoon toucan mascot for Froot Loops breakfast cereal.",
+            };
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            toucan.PrintBird();
 
+            Reptile godzilla = new Reptile
+            {
+                Legs = 2, 
+                Eat = "carnivore", 
+                Pet = "Definitely", 
+                End = true,
+                Radiation = true,
+                Name = "Godzilla",
+                Color = "grayish green colored",
+                Famous = "Godzilla is depicted as an enormous, destructive, prehistoric sea monster awakened and empowered by nuclear radiation. With the nuclear bombings of Hiroshima and Nagasaki and the Lucky Dragon 5 incident still fresh in the Japanese consciousness, Godzilla was conceived as a metaphor for nuclear weapons.",
+            };
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            godzilla.PrintRep();
+            Console.ReadLine();
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
         }
     }
 }
